@@ -1,5 +1,5 @@
-import CampsitesList from './features/campsites/CampsitesList';
 import Header from './components/Header';
+import CampsitesList from './features/campsites/CampsitesList';
 import Footer from './components/Footer';
 import './App.css';
 
