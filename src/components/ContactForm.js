@@ -20,7 +20,7 @@ const handleSubmit = (values, {resetForm }) => {
                 feedback: ''
             }}
             onSubmit = {handleSubmit}
-            validate = { validateContactForm}
+            validate = {validateContactForm}
         >
             <Form>
                 <FormGroup row>
@@ -32,7 +32,6 @@ const handleSubmit = (values, {resetForm }) => {
                             name='firstName'
                             placeholder='First Name'
                             className='form-control'
-
                         />
                         <ErrorMessage name='firstName'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
