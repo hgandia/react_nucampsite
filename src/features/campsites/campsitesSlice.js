@@ -27,15 +27,15 @@ const campsitesSlice = createSlice ({
     reducers: {},
     extraReducers: {
         [fetchCampsites.pending]: (state) => {
-            state.isloading = true;
+            state.isLoading = true;
         },
         [fetchCampsites.fulfilled]: (state, action) => {
-            state.isloading = false;
+            state.isLoading = false;
             state.errMsg = '';
             state.campsitesArray = mapImageURL(action.payload);
         },
         [fetchCampsites.rejected]: (state, action) => {
-            state.isloading = false;
+            state.isLoading = false;
             state.errMsg = action.error ? action.error.message: 'Fetch failed';
         }
     }
