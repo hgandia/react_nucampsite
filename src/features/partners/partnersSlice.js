@@ -36,7 +36,7 @@ const partnersSlice = createSlice({
         },
         [fetchPartners.rejected]: (state, action) => {
             state.isLoading = false;
-            state.errMsg = action.error ? action.error.message : 'Fetch failed';
+            state.errMsg = action.error ? action.error.message : 'Fetch Failed';
         }
     }
 });
