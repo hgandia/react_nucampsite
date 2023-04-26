@@ -47,7 +47,7 @@ const handleSubmit = (values, {resetForm }) => {
                             name='lastName'
                             placeholder='Last Name'
                             className='form-control'
-                            />
+                        />
                             <ErrorMessage name='lastName'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>
@@ -114,7 +114,7 @@ const handleSubmit = (values, {resetForm }) => {
                             as='textarea'
                             rows='12'    
                             className='form-control'
-                            />
+                        />
                     </Col>
                 </FormGroup>
                 <FormGroup row>
