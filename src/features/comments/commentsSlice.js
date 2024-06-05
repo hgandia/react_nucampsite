@@ -15,7 +15,7 @@ export const fetchComments = createAsyncThunk (
 );
 
 export const postComment = createAsyncThunk (
-    'comments/postComments',
+    'comments/postComment',
     async(comment, {dispatch}) => {
         const response = await fetch(baseUrl + 'comments', { method: 'POST',
                                                              body: JSON.stringify(comment),
